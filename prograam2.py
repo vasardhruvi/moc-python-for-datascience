@@ -25,7 +25,7 @@ print("\nHighest Marks:", highest)
 print("Lowest Marks:", lowest)
 print("Average Marks:", average)
 
-print("\nStudents Scoring Above Average:")
+print("\nStudents Scoring  Average:")
 for i in range(10):
     if marks[i] > average:
         print(names[i], ":", marks[i])
