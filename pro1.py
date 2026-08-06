@@ -1,15 +1,38 @@
-
-
 name = input("Enter Student Name: ")
 roll_no = int(input("Enter Roll Number: "))
 age = int(input("Enter Age: "))
 
 print("\nEnter marks for 5 subjects:")
-mark1 = float(input("english: "))
-mark2 = float(input("gujrati: "))
-mark3 = float(input("hindi: "))
-mark4 = float(input("maths: "))
-mark5 = float(input("Science: "))
+
+while True:
+    mark1 = float(input("English: "))
+    if 0 <= mark1 <= 100:
+        break
+    print("Marks must be between 0 and 100.")
+
+while True:
+    mark2 = float(input("Gujarati: "))
+    if 0 <= mark2 <= 100:
+        break
+    print("Marks must be between 0 and 100.")
+
+while True:
+    mark3 = float(input("Hindi: "))
+    if 0 <= mark3 <= 100:
+        break
+    print("Marks must be between 0 and 100.")
+
+while True:
+    mark4 = float(input("Maths: "))
+    if 0 <= mark4 <= 100:
+        break
+    print("Marks must be between 0 and 100.")
+
+while True:
+    mark5 = float(input("Science: "))
+    if 0 <= mark5 <= 100:
+        break
+    print("Marks must be between 0 and 100.")
 
 total = mark1 + mark2 + mark3 + mark4 + mark5
 percentage = total / 5
@@ -29,4 +52,3 @@ if passed:
     print("Result      : PASS")
 else:
     print("Result      : FAIL")
-
